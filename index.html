@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renty Enterprise</title>
+    <!--Stylesheets-->
+    <link href="public/style.css" type="text/css"rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--Animate On Scroll CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+</head>
+<body>
+ <!--Access Now-->
+ <section class="note-container">
+    <div class="access-now">
+        <p>Learn about our 2023 product roadmap and what it means for you.</p>
+        <a href="#">Access Now</a>
+    </div>
+</section>
+<header>
+    <!--Navbar Section-->
+    <h1>Renty</h1>
+    <span class="menu-open" id="menuOpen">&#9776;</span>
+    <nav class="desktop-nav">
+        <a href="#about-section">About</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Resources</a>
+        <a href="#">Contact</a>
+    </nav>
+    <button id="desktop-btn">
+        <i class="fa fa-apple" aria-hidden="true"></i>
+        Download App
+    </button>
+    <div class="transparent-background" id="transparentBackground">
+        <div class="mobile-nav-container">
+            <span class="menu-close" id="menuClose">&#120;</span>
+            <nav class="mobile-nav">
+                <a href="#about-section">About</a>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Resources</a>
+                <a href="#">Contact</a>
+            </nav>
+            <button id="mobile-btn">
+                <i class="fa fa-apple" aria-hidden="true"></i>
+                Download App
+            </button>
+        </div>
+    </div>
+</header>
+    <main>
+        <!--Hero Section-->
+  <section class="hero-section" data-aos="fade-right" data-aos-duration="1500">
+    <div class="hero-content">
+        <div class="hero-text">
+        <h2>Search and find <br>your best car rental<br> the easy way</h2>
+        <p>Drive performance and cross-functional collaboration with<br> easy to use dashboards, data-visualization and automated <br>insights in one click.</p>
+        <button class="book-btn">
+            Book Now
+            <i class="fa fa-phone" aria-hidden="true"></i>
+        </button>
+           
+        <a href="#">
+            See all cars
+        </a>
+        </div>
+        <img src="Assets/images/interior.jpeg" width="550px"height="450" alt="Interor of Mercedes Benz Vehicle">
+    </div>
+</section>
+
+<!--About Us Section-->
+<section class="about-section" id ="about-section">
+    <div class="about-content">
+        <img src="Assets/images/about-img.jpg">
+        <div class="about-text">
+            <h3>
+                About Us
+            </h3>
+            <h2>More than 150+ special collection cars</h2>
+            <p>
+                Get the car of your dreams with installments of your choice. There are various attractive offers form Moladin through our collaboration with various trusted leading leasing companies.
+                </p>
+                <button class="about-btn"type="button">
+                    See all cars
+                    <i class="fa fa-arrow-right"></i>
+                </button>
+        </div>
+       
+    </div>
+</section>
+<!--Services Section-->
+<section class="our-services" id="services" data-aos="fade-left" data-aos-duration="15000">
+    <div class="our-services-content">
+        <h3>Our Services</h3>
+        <h2>We provide you with the most exclusive rental services</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, sequi obcaecati! Libero fugiat similique velit.</p>
+    </div>
+    <div class="services-cards">
+        <div class="service-card">
+            <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+            <h4>Quality Choice</h4>
+            <p>Search from a wide selection of cars curated by Renty partners the fast and easy way</p>
+        </div>
+        <div class="service-card">
+            <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
+            <h4>Exclusive Service</h4>
+            <p>Renty partners are ready to help you find your dream car for your holiday in the city</p>
+        </div>
+        <div class="service-card">
+            <i class="fa fa-key fa-3x" aria-hidden="true"></i>
+            <h4>Fast and Secure</h4>
+            <p >Transaction processes are completed within 24 hours (verified by Bank of Ghana) </p>
+        </div>
+    </div>
+</section>
+<!--Car Collection Section-->
+<section class="collection-section" id="collectionsSection" data-aos="fade-up" data-aos-duration="15000">
+    <div class="collection-header">
+        <h3>Collection</h3>
+        <h2>Our Collection Cars</h2>
+    </div>
+    <div class="collection-nav">
+        <a id="popularLink" data-type="popular-cars"><span class="dot-checker">.</span> Popular</a>
+        <a id="largeLink" data-type="large-cars"><span class="dot-checker">.</span> Large car</a>
+        <a id="smallLink" data-type="small-cars"><span class="dot-checker">.</span> Small cars</a>
+        <a id="exclusiveLink" data-type="exclusive-cars"><span class="dot-checker">.</span> Exclusive cars</a>
+    </div>
+    <div class="filter-section">
+       <i class="fa fa-filter" aria-hidden="true"></i>
+        <select class="filter-select" id="filterSelect">
+            <option value="popular">Popular</option>
+            <option value="large-cars">Large cars</option>
+            <option value="small-cars">Small cars</option>
+            <option value="exclusive-cars">Exclusive cars</option>
+        </select>
+    </div>
+    <!--Cars being rented-->
+    <!--Poopular cars-->
+    <div class="cars collection-1" id="popular-cars">
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/cruiser.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 110,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Accra</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Toyota Land Cruiser 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/amg.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 94,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Kumasi</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Mercedes Benz AMG 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2022-range-rover-sv.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 89,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Sunyani</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Range Rover Sport 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/bmw-2series.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 75,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Tema</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">BMW M2 Series 2020</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2020-bmw-3-series-m340i-.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 79,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Accra</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">BMW m340i 2021</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car large-cars">
+            <div class="car-img-container">
+                <img src="./Assets/images/f150.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 64,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Accra</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Ford F150 2020</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+    </div>
+
+<!--Large Cars-->
+
+    <div class="cars collection-2" id="large-cars">
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2023-Volvo-XC90.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 250,00 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Legon</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Volvo XC90 2023</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2023_Jeep_Wagoneer_LargeSUVS_SEO.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 294,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Airport</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Jeep Wagoneer 2023</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2021-gmc-yukon-denali-106-1ranked-1617722316.jpeg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 289,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Hatso</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">GMC Yukon Denali 2021</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2017-Kia-Sorento-SUV-white-press-image-1001x565-top-five-seven-seat-suvs.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 175,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Tema</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Kia Sorento 2017</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2021-Cadillac-Escalade-098-edited.avif"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 279,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Legon</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Cadillac Escalade 2021</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car ">
+            <div class="car-img-container">
+                <img src="./Assets/images/JDPA_2020 Lincoln Navigator Reserve Black Front View.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 264,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">La</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Lincoln Navigator 2020</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+    </div>
+
+
+<!--Small Cars-->
+    <div class="cars collection-3" id="small-cars">
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/hyundai-i10.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 119,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Paris</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Hyundai i10 2021</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/040c1000-ce6c-11e9-bfd7-1a194eb4ab23.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 99,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Kumasi</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Nissan Juke 2020</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/What-is-the-Best-Compact-Car-A_O.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 84,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Santoe</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Kia Soul</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/kia-forte.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 94,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Tema</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Kia Forte 2021</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2021-Mini-Cooper-JCW-GP-featured2.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 89,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Denver</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Mini Cooper 2021</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/lead5-2013-honda-civic-review.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 54,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Oyibi</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Honda Civic 2013</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+    </div>
+
+<!--Exclsuive Cars-->
+
+    <div class="cars collection-4" id="exclusive-cars">
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/audi-s5.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 79,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Adenta</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Audi S5 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/2023-Mercedes-Benz-S580-4Matic-13.avif"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 194,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Dubai</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Mercedes Benz S580 2023</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/402979-2023-toyota-camry.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 99,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Sunyani</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Toyota Camry 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/mas.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 175,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Airport</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Maseratti Levante 2022</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car">
+            <div class="car-img-container">
+                <img src="./Assets/images/gialloauge_road_dynamic_10.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 179,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">Ho</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Lambroghini Urus 2021</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+        <div class="car large-cars">
+            <div class="car-img-container">
+                <img src="./Assets/images/image.jpg"alt="">
+            </div>
+            <div class="car-info">
+                <div class="info-major">
+                    <div class="pricing">
+                        <h4 class="price"><span class="currency">$</span> 164,99 <span class="rate">/day</span></h3> 
+                    </div>
+                 <div class="location-container">
+                   <i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>
+                   <span class="location">NY City</span>
+                 </div>
+                </div>
+                </div>
+               
+                <h4 class="make">Porsche 718 Boxster</h4>
+                <div class="book-car-btn">
+                    <button class="book-btn-2">
+                        Booking Now
+                        <span class="phone">
+                            <i class="fa fa-phone" aria-hidden="true" id="call"></i>
+                        </span>
+                       
+                    </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="see-btn">
+        <button class="about-btn see-cars-btn"type="button">
+            See all cars
+            <i class="fa fa-arrow-right"></i>
+        </button>
+    </div>
+</section>
+  </main>
+    <!--Footer Section-->
+    <footer>
+        <section class="footer-section">
+            <div class="footer-nav">
+                <h1>Renty</h1>
+                <div class="footer-menu-bar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+            </div>
+            <p>&copy; Developed by Selasie Sepenu | 2023</p>
+        </section>
+    </footer>
+    <!--Scripts-->
+  <script src="./public/main.js"></script>
+  <!--AOS SCRIPTS-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
+  <script>
+    AOS.init();
+  </script>
+ 
+</body>
+<html>
